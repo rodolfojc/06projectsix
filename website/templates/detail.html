@@ -3,11 +3,11 @@
 
 {% block content %}
 
-  <div class="<details>"">
+  <div class="details">
     <h2>{{batman.title}}</h2>
     <p>{{batman.text}}</p>
   </div>
 
-
+<h4><a href="{% url 'article_edit' batman.pk %}">Edit this post</a></h4>
 
 {% endblock content %}
